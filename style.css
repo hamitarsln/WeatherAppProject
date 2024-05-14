@@ -1,0 +1,82 @@
+body {
+    background-image: url(background.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.weatherForm {
+    font-family: "poleno", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 6.5rem;
+    text-align: center;
+    color: white;
+    border: none;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+    background-color: hsl(0, 0%, 100%, 0.1);
+    padding: 20px;
+}
+
+.cityInput {
+    font-size: 2.5rem;
+    text-align: center;
+    color: black;
+    border: none;
+    border-radius: 10px;
+    background-color: hsl(0, 0%, 100%);
+    padding: 20px;
+}
+
+#fetch-weather {
+    background-color: yellowgreen;
+    font-family: "poleno", sans-serif;
+    font-size: 1.5rem;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 15px 15px;
+    margin: 10px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    transition: all 0.1s;
+    box-shadow: 0 0 10px yellowgreen;
+}
+
+#fetch-weather:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px yellowgreen,
+                0 0 40px yellowgreen;
+}
+
+.card {
+    font-family: "poleno", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 2rem;
+    text-align: center;
+    color: white;
+    border: none;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+.errorDisplay {
+    color: brown;
+}
+
+.weatherEmoji {
+    font-size: 3rem;
+}
